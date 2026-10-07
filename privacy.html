@@ -14,12 +14,13 @@
 <li><strong>Purchase status.</strong> Whether you have an active Soritok Pro subscription, the plan, and anonymous transaction identifiers. We never see your card details; Apple handles all billing.</li>
 <li><strong>Usage analytics.</strong> Which screens you open, buttons you tap and features you use, with a device model, iOS version, app version and a random identifier. We do not collect precise location, contacts, photos or advertising identifiers.</li>
 <li><strong>Feedback and reports.</strong> Anything you post on the in-app feedback board or send when you report a clip.</li>
+<li><strong>Session recordings.</strong> To see where people get stuck, we record a small sample of app sessions as an anonymised wireframe: the shape and position of what was on screen, and where you tapped and scrolled. Text is masked before the recording leaves your device, so anything you type &mdash; your email, your password, the words you save &mdash; is never readable in a recording, and images and system screens such as Apple's payment sheet are never captured. Recordings are tied to the same random identifier as the rest of our analytics, not to your name.</li>
 </ul>
 
 <h2>Why we collect it</h2>
 <ul>
 <li>To run the app: keep your account, sync your saved words and progress, and unlock Pro features you have paid for.</li>
-<li>To improve the app: analytics tell us which features are used and where people get stuck.</li>
+<li>To improve the app: analytics and masked session recordings tell us which features are used and where people get stuck.</li>
 <li>To answer you when you contact us.</li>
 </ul>
 <p>We do not sell your data and do not show third-party advertising.</p>
@@ -28,7 +29,7 @@
 <ul>
 <li><strong>Supabase</strong> hosts our database and authentication. Your account and learning data live there.</li>
 <li><strong>RevenueCat</strong> processes subscription status from Apple's App Store on our behalf.</li>
-<li><strong>PostHog</strong> stores usage analytics.</li>
+<li><strong>PostHog</strong> stores usage analytics and the masked session recordings described above.</li>
 <li><strong>Apple</strong> handles payment and, if you choose it, Sign in with Apple.</li>
 <li><strong>Google</strong> handles Sign in with Google if you choose it. Video clips are played with YouTube's embedded player, which is subject to <a href="https://policies.google.com/privacy">Google's privacy policy</a>. When a video plays, YouTube receives your IP address and standard player data as it would on any website embedding a video.</li>
 <li><strong>AI explanations.</strong> When you ask for an in-context explanation of a word, the sentence and word are sent to an AI language model provider to generate the explanation. No account details are included in that request.</li>
